@@ -26,6 +26,60 @@ h1 {
     z-index: 1;
 }
 
+#toggleSidebar {
+    position: fixed;
+    top: 15px;
+    left: auto;
+    right: 15px;
+    z-index: 1100;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    background: #111;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    z-index: 1050;
+}
+
+#sidebar.active {
+    right: 0px;
+}
+
+#sidebar h2 {
+    margin-top: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #27829e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#sidebar button:hover {
+    background: #10285a;
+}
+
 #infoPanel {
     position: fixed;
     bottom: 0;        
@@ -38,7 +92,67 @@ h1 {
     z-index: 1000;
 }
 
-/* ===== Landing page ===== */
+/* Botón de icono (GitHub) */
+.github-button {
+    display: inline-block; 
+    text-decoration: none; 
+}
+
+.github-button img {
+    width: 50px; 
+    height: auto;
+    
+    transition: transform 0.3s ease; 
+}
+
+.github-button img:hover {
+    transform: scale(1.2); 
+    cursor: pointer; 
+}
+
+/* LinkedIn Button */
+.linkedn-button {
+    display: inline-block; 
+    text-decoration: none; 
+}
+
+.linkedn-button img {
+    width: 50px; 
+    height: auto;
+    
+    transition: transform 0.3s ease; 
+}
+
+.linkedn-button img:hover {
+    transform: scale(1.2); 
+    cursor: pointer; 
+}
+
+/* Reddit Button */
+.reddit-button {
+    display: inline-block; 
+    text-decoration: none; 
+}
+
+.reddit-button img {
+    width: 50px; 
+    height: auto;
+    
+    transition: transform 0.3s ease; 
+}
+
+.reddir-button img:hover {
+    transform: scale(1.2); 
+    cursor: pointer; 
+}
+
+.social-links {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
 
 body.landing {
     margin: 0;
